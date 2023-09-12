@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gugi&family=Jua&family=Poor+Story&display=swap');
+@import '../../node_modules/include-media/dist/include-media';
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #F3D3CC;
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .title {
+                color: #E38F9F;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                margin-right: 30px;
+                font-size: 65px;
+                font-family: 'Dongle', sans-serif;
+                cursor: pointer;
+                .bsegg {
+                    font-size: 75px;
+                }
+                .pencil {
+                    font-size: 45px;
+                    position: relative;
+                    left: -40px;
+                }
+                @include media('<826px') {
+                    font-size: 40px;
+                    .bsegg {
+                        font-size: 45px;
+                    }
+                    .pencil {
+                        font-size: 25px;
+                        left: -25px;
+                        top: -3px;
+                    }
+                }
+                @include media('<700px') {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            .nav {
+                display: block;
+                color: #E38F9F;
+                font-size: 35px;
+                margin: 20px;
+            }
+        }
+        .right {
+            padding-right: 70px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .loginsignup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 170px;
+                height: 100%;
+                .inner {
+                    height: 30px;
+                    padding: 5px;
+                    display: inline-flex;
+                    align-items: center;
+                    color: #E38F9F;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border: 2px solid #E38F9F;
+                    border-radius: 10px;
+                    transition: all 0.2s;
+                    &:hover {
+                        background: #E38F9F;
+                        color: #2b2b2b;
+                    }
+                }
+            }
+            .logout {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #E38F9F;
+                border: 2px solid #E38F9F;
+                height: 30px;
+                padding: 5px;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    background: #E38F9F;
+                    color: #2b2b2b;
+                }
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

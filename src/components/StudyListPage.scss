@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .tamagochi{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px;
+        width: 512px;
+        height: 512px;
+        background: #F1DDD2;
+        border-radius: 50px;
+        img {
+            height: 0px;
+        }
+        strong {
+            position: absolute;
+            font-size: 30px;
+            bottom: 30px;
+        }
+    }
+}

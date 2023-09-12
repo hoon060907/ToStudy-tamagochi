@@ -1,0 +1,40 @@
+.TodoInsert {
+    display: flex;
+    margin-bottom: 20px;
+    input {
+        background: linear-gradient(#F2D7CF, #EEF4E6);
+        margin-right: 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: black;
+        box-shadow: 3px 3px 5px gray;
+        &::placeholder {
+            color: gray;
+        }
+        flex: 1;
+    }
+    button {
+        box-shadow: 3px 3px 5px gray;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: none;
+        outline: none;
+        border: none;
+        color: #df8394;
+        border: 3px solid #df8394;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.1s background ease-in;
+        &:hover {
+            background: #F3D3CC;
+        }
+    }
+}

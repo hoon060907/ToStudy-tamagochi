@@ -1,0 +1,29 @@
+.profilebox {
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(#F5BFBD, #EEF4E6);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+
+    .tamagochi_profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        background: #FFF6EE;
+        border-radius: 30px;
+        img {
+            height: 0px;
+        }
+    }
+    .userinfo {
+        padding-left: 0;
+        list-style: none;
+        li {
+            font-size: 20px;
+        }
+    }
+}

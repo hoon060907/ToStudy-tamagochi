@@ -1,0 +1,65 @@
+.studydiary-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    .diarybox{
+        padding: 0;
+        margin: 10px;
+        .diary {
+            border-top: 30px solid #d4568b;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            box-sizing: border-box;
+            display: block;
+            width: 250px;
+            height: 250px;
+            outline: none;
+            border-radius: 10px;
+            resize: none;
+            color: #414141;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            background: linear-gradient(#E38F9F, #F5BFBD);
+        }
+        .date {
+            text-align: end;
+            margin-top: 5px;
+            color: rgba($color: #000000, $alpha: 0.5);
+        }
+        .deletediary {
+            color: white;
+            border: none;
+            background: none;
+            font-size: 24px;
+            position: relative;
+            top: -290px;
+            right: -215px;
+            cursor: pointer;
+        }
+        &:nth-child(even) {
+            .diary {
+                background: linear-gradient(#F5BFBD, #EEF4E6);
+            }
+        }
+    }
+    .towrite {
+        box-sizing: border-box;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #df8394;
+        margin: 10px;
+        border-radius: 10px;
+        color: #df8394;
+        text-decoration: none;
+        font-size: 100px;
+        background: #EEF4E6;
+    }
+}
