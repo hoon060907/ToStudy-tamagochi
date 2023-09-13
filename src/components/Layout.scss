@@ -37,7 +37,7 @@
                     position: relative;
                     left: -40px;
                 }
-                @include media('<840px') {
+                @include media('<870px') {
                     font-size: 40px;
                     .bsegg {
                         font-size: 45px;
@@ -48,7 +48,7 @@
                         top: -3px;
                     }
                 }
-                @include media('<700px') {
+                @include media('<734px') {
                     span {
                         display: none;
                     }
