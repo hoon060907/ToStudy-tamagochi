@@ -3,8 +3,12 @@ import { auth, db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, update } from "firebase/database";
-import './Login.scss';
+import './Signup.scss';
 import Swal from "sweetalert2";
+import { AiOutlineMail } from 'react-icons/ai';
+import { TbPassword } from 'react-icons/tb';
+import { AiOutlineUser } from 'react-icons/ai';
+import { LiaBirthdayCakeSolid } from 'react-icons/lia';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -79,26 +83,46 @@ const Signup = () => {
     }
 
     return (
+        // <div className="loginbody">
+        //     <div className="box">
+        //         <h1 className="title">SIGN UP</h1>
+        //         <div className="innerbox">
+        //             <p className="text">email</p>
+        //             <input className="input" type="text" onChange={onChangeEmail} />
+        //         </div>
+        //         <div className="innerbox">
+        //             <p className="text">password</p>
+        //             <input className="input" type="password" onChange={onChangePw} />
+        //         </div>
+        //         <div className="innerbox">
+        //             <p className="text">알 닉네임</p>
+        //             <input className="input" type="text" onChange={onChangeEggname} />
+        //         </div>
+        //         <div className="innerbox">
+        //             <p className="text">희망 목표</p>
+        //             <input className="input" type="text" onChange={onChangeGoal} />
+        //         </div>
+        //         <button onClick={register} className="btn">Sign Up</button>
+        //     </div>
+        // </div>
         <div className="loginbody">
             <div className="box">
-                <h1 className="title">SIGN UP</h1>
+                <div className="bigText">SignUp</div>
                 <div className="innerbox">
-                    <p className="text">email</p>
-                    <input className="input" type="text" onChange={onChangeEmail} />
+                    <div className="text">
+                        <AiOutlineMail size='50px' color="#E38F9F"/> 
+                        <input placeholder="이메일 ex.2006@gmail.com"className="input" type="text" onChange={onChangeEmail} /></div>
+                    <div className="text">
+                        <TbPassword size='50px' color="#E38F9F"/> 
+                        <input placeholder="비밀번호"className="input" type="password" onChange={onChangePw} /></div>
+                    <div className="text">
+                        <AiOutlineUser size='50px' color="#E38F9F"/> 
+                        <input placeholder="알 닉네임"className="input" type="text" onChange={onChangeEggname} /></div>
+                    <div className="text">
+                        <LiaBirthdayCakeSolid size='50px' color="#E38F9F"/> 
+                        <input placeholder="희망목표"className="input" type="text" onChange={onChangeGoal} /></div>
                 </div>
-                <div className="innerbox">
-                    <p className="text">password</p>
-                    <input className="input" type="password" onChange={onChangePw} />
-                </div>
-                <div className="innerbox">
-                    <p className="text">알 닉네임</p>
-                    <input className="input" type="text" onChange={onChangeEggname} />
-                </div>
-                <div className="innerbox">
-                    <p className="text">희망 목표</p>
-                    <input className="input" type="text" onChange={onChangeGoal} />
-                </div>
-                <button onClick={register} className="btn">Sign Up</button>
+                <div onClick={register} className="btn">SignUp</div>
             </div>
         </div>
     );
