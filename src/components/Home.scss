@@ -8,12 +8,13 @@
     flex-direction: column;
     .moral {
         margin-top: 20px;
-        background: white;
+        background: rgba($color: #fff, $alpha: 0.5);
         width: 40;
         padding: 20px;
         margin-bottom: 50px;
         font-size: 20px;
         border-radius: 10px;
+        text-align: center;
         .book {
             margin-right: 30px;
         }
@@ -58,6 +59,29 @@
         text-align: center;
         img {
             height: 0px;
+        }
+        .egginfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: 800;
+            color: #FFAFAF;
+            .name{
+                width: 150px;
+                background: rgba($color: #fff, $alpha: 0.5);
+                height: 100%;
+                border-radius: 20px 0 0 20px;
+                margin-right: 3px;
+            }
+            .level{
+                width: 150px;
+                background: rgba($color: #fff, $alpha: 0.5);
+                height: 100%;
+                border-radius: 0 20px 20px 0;
+            }
         }
     }
     &.loggedin {

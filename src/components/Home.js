@@ -9,12 +9,14 @@ import { BsBookmarks } from 'react-icons/bs';
 const Home = () => {
     const navigate = useNavigate();
     const [level, setLevel] = useState();
+    const [name, setName] = useState();
 
     useEffect(() => {
         if(auth.currentUser){
-            const Ref = ref(db, `users/${auth.currentUser.uid}/lv`)
+            const Ref = ref(db, `users/${auth.currentUser.uid}`)
             onValue(Ref, (snapshot) => {
-                setLevel(snapshot.val());
+                setLevel(snapshot.val().lv);
+                setName(snapshot.val().eggname);
             });
         }
     }, []);
@@ -45,7 +47,7 @@ const Home = () => {
                 <hr className="hr" />
             </div>
             }
-            {auth.currentUser ? <div className="imagebox"><h2>당신의 다마고치</h2><Tamagochi level={level} /><br /><b>Lv.{level}</b></div> : <button className="start" onClick={onClick}>시작하기</button>}
+            {auth.currentUser ? <div className="imagebox"><Tamagochi level={level} /><div className="egginfo"><div className="name">{name}</div><div className="level">Lv.{level}</div></div></div> : <button className="start" onClick={onClick}>시작하기</button>}
         </div>
     )
 }
