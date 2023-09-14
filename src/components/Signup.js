@@ -51,28 +51,32 @@ const Signup = () => {
                     Swal.fire({
                         title: '비밀번호는 6자리 이상이어야 합니다',
                         background: 'linear-gradient(#F5BFBD, #EEF4E6)',
-                        position: 'top'
+                        position: 'top',
+                        confirmButtonColor: '#E38F9F'
                     });
                     break;
                 case 'auth/invalid-email':
                     Swal.fire({
                         title: '잘못된 이메일 주소입니다',
                         background: 'linear-gradient(#F5BFBD, #EEF4E6)',
-                        position: 'top'
+                        position: 'top',
+                        confirmButtonColor: '#E38F9F'
                     });
                     break;
                 case 'auth/email-already-in-use':
                     Swal.fire({
                         title: '이미 가입되어 있는 계정입니다',
                         background: 'linear-gradient(#F5BFBD, #EEF4E6)',
-                        position: 'top'
+                        position: 'top',
+                        confirmButtonColor: '#E38F9F'
                     });
                     break;
                 default:
                     Swal.fire({
                         title: '다시 입력해주세요.',
                         background: 'linear-gradient(#F5BFBD, #EEF4E6)',
-                        position: 'top'
+                        position: 'top',
+                        confirmButtonColor: '#E38F9F'
                     });
             }
         }

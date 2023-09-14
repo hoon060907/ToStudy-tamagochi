@@ -49,7 +49,8 @@ const Login = () => {
             Swal.fire({
                 title: '로그인할 수 없습니다.',
                 background: 'linear-gradient(#F5BFBD, #EEF4E6)',
-                position: 'top'
+                position: 'top',
+                confirmButtonColor: '#E38F9F'
             });
         }
     }

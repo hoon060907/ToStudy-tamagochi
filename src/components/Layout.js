@@ -32,7 +32,8 @@ const Layout = ({ setIsLoggedIn }) => {
     const onClick = () => {
         Swal.fire({
             title: '로그인하세요!',
-            background: 'linear-gradient(#F5BFBD, #EEF4E6)'
+            background: 'linear-gradient(#F5BFBD, #EEF4E6)',
+            confirmButtonColor: '#E38F9F'
         });
     };
 
