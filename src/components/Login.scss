@@ -10,7 +10,7 @@
         height: 800px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         background: linear-gradient(#F5BFBD, #EEF4E6);
         border-radius: 50% / 60% 60% 40% 40%;
@@ -31,7 +31,7 @@
                 border-radius: 5px;
                 background: none;
             }
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
         .btn {
             display: block;

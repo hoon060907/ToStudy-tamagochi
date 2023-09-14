@@ -41,7 +41,7 @@ const Layout = ({ setIsLoggedIn }) => {
         <div className="body">
             <div className="header">
                 <div className="left">
-                    <h3 className="title" onClick={() => {navigate('/');}}><span>다마고치 벤쿄</span><BsEgg className="bsegg" /><BsPencilFill className="pencil" />{/*<img src="images/logo0.svg" />*/}</h3>
+                    <h3 className="title" onClick={() => {navigate('/');}}>{/*<span>다마고치 벤쿄</span><BsEgg className="bsegg" /><BsPencilFill className="pencil" />*/}<img src="images/logo0.svg" /></h3>
                     {auth.currentUser ?
                         <Link to="/profile" className="nav">
                             <BiUser />
