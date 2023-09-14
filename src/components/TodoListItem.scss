@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         svg {
-            font-size: 40px;
+            font-size: 50px;
             color: #df8394;
         }
         .text {
@@ -23,7 +23,7 @@
             height: 40px;
             line-height: 40px;
             margin-right: 10px;
-            box-shadow: 3px 3px 5px gray;;
+            box-shadow: 3px 3px 5px gray;
         }
         &.checked {
             svg {
@@ -36,14 +36,18 @@
         }
     }
     .remove {
+        margin-right: 7px;
+        // box-shadow: 3px 3px 5px gray;;
+        border-radius: 10px;
+        background: #E38F9F;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 30px;
-        color: #ff6b6b;
+        color: white;
         cursor: pointer;
-        &:hover {
-            color: #ff8787;
-        }
     }
     &+& {
         margin-top: 20px;

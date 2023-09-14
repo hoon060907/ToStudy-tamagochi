@@ -41,9 +41,19 @@
             right: -215px;
             cursor: pointer;
         }
-        &:nth-child(even) {
+        &:nth-child(4n-2) {
             .diary {
                 background: linear-gradient(#F5BFBD, #EEF4E6);
+            }
+        }
+        &:nth-child(4n-1) {
+            .diary {
+                background: linear-gradient(#EEF4E6, #EEF4E6);
+            }
+        }
+        &:nth-child(4n) {
+            .diary {
+                background: linear-gradient(#E0F3ED, #C0E8E8);
             }
         }
     }
