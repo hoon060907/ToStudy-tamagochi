@@ -18,19 +18,21 @@
             margin-right: 30px;
         }
     }
-    .home_large {
-        font-size: 50px;
-        text-align: center;
-    }
-    .home_small {
-        display: block;
-        font-size: 20px;
-        text-align: center;
-        color: gray;
-    }
-    .hr {
-        width: 500px;
-        border-top: 3px solid black;
+    .home_text_area {
+        .home_large {
+            font-size: 50px;
+            text-align: center;
+        }
+        .home_small {
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            color: gray;
+        }
+        .hr {
+            width: 500px;
+            border-top: 3px solid black;
+        }
     }
     .start {
         background: linear-gradient(#E38F9F, #F5BFBD);

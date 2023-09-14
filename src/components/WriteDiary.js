@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { auth, db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import './WriteDiary.scss';
+import Swal from "sweetalert2";
 
 const WriteDiary = () => {
     const navigate = useNavigate();
@@ -24,7 +25,11 @@ const WriteDiary = () => {
 
     const onClick = () => {
         if(text === "") {
-            alert('내용을 작성하세요!');
+            Swal.fire({
+                title: '일기를 작성해주세요!',
+                background: 'linear-gradient(#E38F9F, #F5BFBD)',
+                confirmButtonColor: '#E38F9F'
+              })
             return;
         }
         date.current = new Date();

@@ -5,7 +5,6 @@ import { onValue, ref } from "firebase/database";
 import './Home.scss';
 import Tamagochi from "./Tamagochi";
 import { BsBookmarks } from 'react-icons/bs';
-import cn from 'classnames';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -32,7 +31,7 @@ const Home = () => {
         "성적이나 결과는 행동이 아니라 습관입니다.” – 아리스토텔레스",
         "성공으로 가는 엘리베이터는 없습니다. 성공은 계단을 통해서만 도달할 수 있습니다. – 지그 지글러",
         "진짜 가치가 있는 곳으로 가는 지름길은 없습니다. – 비벌리 실스",
-        "제가 하는 가장 큰 후회는 한 단어로 요약할 수 있는데, 그것은 ‘미루기’ 입니다. – 론 쿠퍼",
+        "제가 하는 가장 큰 후회는 한 단어로 요약할 수 있는데, 그것은 ‘미루기’ 입니다. – 론 쿠퍼"
       ];
       let random_index = Math.floor(Math.random() * names.length);
       let random_name = names[random_index];
